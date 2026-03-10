@@ -149,13 +149,13 @@ section {
 }
 
 .scroll-cue {
-  color: var(--text-muted);
+  color: #e53e3e;
   animation: heartbeat 1.35s ease-in-out infinite;
   transform-origin: center;
 }
 
 .scroll-cue:hover {
-  color: var(--text);
+  color: #c53030;
 }
 
 @keyframes heartbeat {
