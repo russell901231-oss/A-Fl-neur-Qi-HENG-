@@ -6,7 +6,7 @@ export default function Hero() {
       id="hero"
       className="hero"
     >
-      <div className="hero-media">
+      <div className="hero-media" style={{ position: 'relative' }}>
         <Image
           src="/hero.jpg"
           alt="Hero image"
@@ -17,35 +17,42 @@ export default function Hero() {
             width: '100%',
             height: 'auto',
             display: 'block',
-            transform: 'translateY(-1cm)',
           }}
         />
-      </div>
-
-      <a className="scroll-cue" href="#about" aria-label="Scroll down">
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
+        <a
+          className="scroll-cue"
+          href="#about"
+          aria-label="Scroll down"
+          style={{
+            position: 'absolute',
+            bottom: '1.25rem',
+            right: '1.25rem',
+          }}
         >
-          <path
-            d="M12 5v12"
-            stroke="currentColor"
-            strokeWidth="1.75"
-            strokeLinecap="round"
-          />
-          <path
-            d="M7.5 13.5L12 18l4.5-4.5"
-            stroke="currentColor"
-            strokeWidth="1.75"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </a>
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 5v12"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              strokeLinecap="round"
+            />
+            <path
+              d="M7.5 13.5L12 18l4.5-4.5"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
   )
 }

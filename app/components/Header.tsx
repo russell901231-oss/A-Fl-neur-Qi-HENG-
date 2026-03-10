@@ -32,6 +32,8 @@ export default function Header() {
             fontStyle: 'italic',
             color: 'rgba(255, 255, 255, 0.92)',
             flexShrink: 0,
+            marginLeft: 0,
+            paddingLeft: 0,
           }}
         >
           A Flâneur , Qi HENG
@@ -44,6 +46,8 @@ export default function Header() {
             fontSize: '0.9375rem',
             margin: 0,
             padding: 0,
+            marginRight: 0,
+            paddingRight: 0,
           }}
         >
           <li><a href="#about" style={{ color: 'rgba(255, 255, 255, 0.72)' }}>About</a></li>
