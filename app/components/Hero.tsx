@@ -25,8 +25,8 @@ export default function Hero() {
           aria-label="Scroll down"
           style={{
             position: 'absolute',
-            bottom: '1.25rem',
-            right: '1.25rem',
+            bottom: '2.5rem',
+            right: '3.25rem',
           }}
         >
           <svg
