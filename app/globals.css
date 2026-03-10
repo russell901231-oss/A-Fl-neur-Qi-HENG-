@@ -145,12 +145,10 @@ section {
 
 .hero-media {
   width: 100%;
-  margin-top: 3cm;
+  margin-top: 0;
 }
 
 .scroll-cue {
-  margin-top: 1.75rem;
-  align-self: center;
   color: var(--text-muted);
   animation: heartbeat 1.35s ease-in-out infinite;
   transform-origin: center;
