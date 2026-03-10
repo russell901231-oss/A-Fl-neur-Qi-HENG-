@@ -7,6 +7,8 @@ export default function Header() {
         position: 'sticky',
         top: 0,
         zIndex: 50,
+        width: '100vw',
+        left: 0,
         background: 'rgba(10, 10, 11, 0.8)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
@@ -14,12 +16,12 @@ export default function Header() {
     >
       <nav
         style={{
-          maxWidth: 960,
-          margin: '0 auto',
+          width: '100%',
           padding: '1rem 1.5rem',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          boxSizing: 'border-box',
         }}
       >
         <a
@@ -29,6 +31,7 @@ export default function Header() {
             fontSize: '1.125rem',
             fontStyle: 'italic',
             color: 'rgba(255, 255, 255, 0.92)',
+            flexShrink: 0,
           }}
         >
           A Flâneur , Qi HENG
@@ -37,8 +40,10 @@ export default function Header() {
           style={{
             listStyle: 'none',
             display: 'flex',
-            gap: '2rem',
+            gap: '1.5rem',
             fontSize: '0.9375rem',
+            margin: 0,
+            padding: 0,
           }}
         >
           <li><a href="#about" style={{ color: 'rgba(255, 255, 255, 0.72)' }}>About</a></li>

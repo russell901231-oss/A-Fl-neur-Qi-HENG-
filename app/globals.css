@@ -134,13 +134,12 @@ section {
 }
 
 .hero {
-  min-height: calc(100vh - 72px);
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 0;
-  padding-bottom: 3rem;
-  /* 黃金比例：主內容寬約 61.8%，左右各留白約 19.1% */
+  padding-bottom: 1rem;
   padding-inline: 0;
 }
 

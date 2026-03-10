@@ -1,7 +1,6 @@
 export default function About() {
   return (
     <section id="about">
-      <p className="section-title">關於我</p>
       <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}>
         我是誰、在做什麼
       </h2>

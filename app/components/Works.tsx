@@ -19,9 +19,8 @@ const projects = [
 export default function Works() {
   return (
     <section id="works">
-      <p className="section-title">作品</p>
       <h2 style={{ fontSize: '1.75rem', marginBottom: '2rem' }}>
-        精選專案
+        作品
       </h2>
       <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         {projects.map((p) => (

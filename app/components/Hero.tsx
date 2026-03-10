@@ -17,7 +17,7 @@ export default function Hero() {
             width: '100%',
             height: 'auto',
             display: 'block',
-            transform: 'translateY(-3.5cm)',
+            transform: 'translateY(-1cm)',
           }}
         />
       </div>
