@@ -17,6 +17,7 @@ export default function Hero() {
             width: '100%',
             height: 'auto',
             display: 'block',
+            marginTop: '-3rem',
           }}
         />
         <a
@@ -26,7 +27,10 @@ export default function Hero() {
           style={{
             position: 'absolute',
             bottom: '2.5rem',
-            right: '3.25rem',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            color: 'white',
+            filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.6))',
           }}
         >
           <svg
