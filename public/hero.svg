@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0a0b"/>
+      <stop offset="1" stop-color="#121214"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="210" x2="1180" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0891b2" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="blur" x="-40" y="-40" width="1480" height="980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" rx="24" fill="url(#bg)"/>
+  <g opacity="0.85" filter="url(#blur)">
+    <path d="M260 620C420 420 560 520 720 360C880 200 1040 260 1140 180C1170 156 1218 176 1228 214C1280 412 1180 650 980 720C740 802 540 780 420 760C320 742 214 740 180 700C150 664 230 658 260 620Z" fill="url(#accent)"/>
+  </g>
+
+  <g opacity="0.55">
+    <rect x="120" y="120" width="1160" height="660" rx="20" stroke="#27272a" stroke-width="2"/>
+    <path d="M140 240H1260" stroke="#27272a" stroke-width="2"/>
+    <circle cx="170" cy="200" r="8" fill="#27272a"/>
+    <circle cx="200" cy="200" r="8" fill="#27272a"/>
+    <circle cx="230" cy="200" r="8" fill="#27272a"/>
+  </g>
+
+  <text x="700" y="470" text-anchor="middle" fill="#fafafa" font-family="Cinzel, serif" font-size="56" font-weight="600">
+    HERO IMAGE
+  </text>
+  <text x="700" y="525" text-anchor="middle" fill="#a1a1aa" font-family="Noto Serif TC, serif" font-size="24">
+    �5�`�;��\�
+  </text>
+</svg>
