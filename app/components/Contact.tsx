@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
     <section id="contact">
-      <p className="section-title">聯絡</p>
       <h2 style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>
         歡迎來信或透過社群找到我
       </h2>
@@ -11,26 +10,20 @@ export default function Contact() {
       <ul style={{ listStyle: 'none', display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
         <li>
           <a
-            href="mailto:your@email.com"
-            style={{ color: 'var(--accent)', textDecoration: 'underline' }}
+            href="mailto:russell901231@gmail.com"
+            style={{ color: 'var(--text)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
           >
-            your@email.com
+            russell901231@gmail.com
           </a>
         </li>
         <li>
           <a
-            href="#"
-            style={{ color: 'var(--text-muted)' }}
+            href="https://www.instagram.com/qiheng901231/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--text)' }}
           >
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            style={{ color: 'var(--text-muted)' }}
-          >
-            GitHub
+            Instagram
           </a>
         </li>
       </ul>
