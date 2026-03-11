@@ -181,3 +181,31 @@ section {
   border-color: var(--accent-dim) !important;
   transform: translateY(-1px);
 }
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .shell {
+    display: block;
+    padding-inline: 1.25rem;
+  }
+
+  .rail {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 0;
+  }
+
+  .hero-media {
+    margin-top: 0;
+  }
+
+  .hero-media img {
+    margin-top: 0 !important;
+  }
+
+  section {
+    padding: 2.5rem 0;
+  }
+}
