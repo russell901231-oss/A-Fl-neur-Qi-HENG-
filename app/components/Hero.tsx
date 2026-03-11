@@ -33,8 +33,9 @@ export default function Hero() {
             marginTop: '-3rem',
           }}
         />
+        {/* 電腦版箭頭：圖片正中央底部 */}
         <a
-          className="scroll-cue"
+          className="scroll-cue scroll-cue-desktop"
           href="#about"
           aria-label="Scroll down"
           onClick={handleClick}
@@ -42,7 +43,7 @@ export default function Hero() {
             position: 'absolute',
             bottom: '2.5rem',
             left: '50%',
-            transform: 'translateX(-50%)',
+            marginLeft: '-26px',
             color: 'white',
             background: 'rgba(120, 120, 120, 0.45)',
             backdropFilter: 'blur(6px)',
@@ -54,7 +55,6 @@ export default function Hero() {
             justifyContent: 'center',
             overflow: 'hidden',
             boxShadow: '0 2px 12px rgba(0,0,0,0.25)',
-            filter: 'none',
           }}
         >
           {ripples.map(r => (
@@ -83,19 +83,8 @@ export default function Hero() {
             aria-hidden="true"
             style={{ position: 'relative', zIndex: 1 }}
           >
-            <path
-              d="M12 5v12"
-              stroke="currentColor"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-            />
-            <path
-              d="M7.5 13.5L12 18l4.5-4.5"
-              stroke="currentColor"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path d="M12 5v12" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+            <path d="M7.5 13.5L12 18l4.5-4.5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
       </div>

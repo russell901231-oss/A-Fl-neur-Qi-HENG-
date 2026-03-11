@@ -155,13 +155,13 @@ section {
 }
 
 .scroll-cue {
-  color: #e53e3e;
+  color: white;
   animation: heartbeat 1.35s ease-in-out infinite;
   transform-origin: center;
 }
 
 .scroll-cue:hover {
-  color: #c53030;
+  opacity: 0.85;
 }
 
 @keyframes ripple {
@@ -222,6 +222,10 @@ section {
     margin-top: 0 !important;
     width: 70% !important;
     height: auto !important;
+  }
+
+  .scroll-cue-desktop {
+    display: none !important;
   }
 
   section {
