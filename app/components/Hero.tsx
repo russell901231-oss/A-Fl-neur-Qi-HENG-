@@ -1,11 +1,24 @@
+'use client'
+
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Hero() {
+  const [ripples, setRipples] = useState<{ id: number; x: number; y: number }[]>([])
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    const id = Date.now()
+    setRipples(prev => [...prev, { id, x, y }])
+    setTimeout(() => {
+      setRipples(prev => prev.filter(r => r.id !== id))
+    }, 600)
+  }
+
   return (
-    <section
-      id="hero"
-      className="hero"
-    >
+    <section id="hero" className="hero">
       <div className="hero-media" style={{ position: 'relative' }}>
         <Image
           src="/hero.jpg"
@@ -24,22 +37,51 @@ export default function Hero() {
           className="scroll-cue"
           href="#about"
           aria-label="Scroll down"
+          onClick={handleClick}
           style={{
             position: 'absolute',
             bottom: '2.5rem',
             left: '50%',
             transform: 'translateX(-50%)',
             color: 'white',
-            filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.6))',
+            background: 'rgba(120, 120, 120, 0.45)',
+            backdropFilter: 'blur(6px)',
+            borderRadius: '50%',
+            width: '52px',
+            height: '52px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            overflow: 'hidden',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.25)',
+            filter: 'none',
           }}
         >
+          {ripples.map(r => (
+            <span
+              key={r.id}
+              style={{
+                position: 'absolute',
+                left: r.x,
+                top: r.y,
+                width: 0,
+                height: 0,
+                borderRadius: '50%',
+                background: 'rgba(255,255,255,0.45)',
+                transform: 'translate(-50%, -50%)',
+                animation: 'ripple 0.6s ease-out forwards',
+                pointerEvents: 'none',
+              }}
+            />
+          ))}
           <svg
-            width="28"
-            height="28"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
+            style={{ position: 'relative', zIndex: 1 }}
           >
             <path
               d="M12 5v12"
