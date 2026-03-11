@@ -38,22 +38,6 @@ export default function Header() {
         >
           A Flâneur , Qi HENG
         </a>
-        <ul
-          style={{
-            listStyle: 'none',
-            display: 'flex',
-            gap: '1.5rem',
-            fontSize: '0.9375rem',
-            margin: 0,
-            padding: 0,
-            marginRight: 0,
-            paddingRight: 0,
-          }}
-        >
-          <li><a href="#about" style={{ color: 'rgba(255, 255, 255, 0.72)' }}>About</a></li>
-          <li><a href="#works" style={{ color: 'rgba(255, 255, 255, 0.72)' }}>Works</a></li>
-          <li><a href="#contact" style={{ color: 'rgba(255, 255, 255, 0.72)' }}>Contact</a></li>
-        </ul>
       </nav>
     </header>
   )
