@@ -199,13 +199,90 @@ section {
 
   .hero-media {
     margin-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-media img {
     margin-top: 0 !important;
+    width: 70% !important;
+    height: auto !important;
   }
 
   section {
     padding: 2.5rem 0;
+  }
+
+  /* 漢堡按鈕 */
+  .mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100;
+    background: rgba(10,10,11,0.75);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 2px;
+  }
+
+  /* 遮罩 */
+  .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 110;
+  }
+
+  /* 抽屜 */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100vh;
+    background: var(--bg);
+    z-index: 120;
+    padding: 4rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: left 0.3s ease;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+  }
+
+  .mobile-drawer.open {
+    left: 0;
+  }
+
+  .mobile-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--text-muted);
+  }
+}
+
+/* 電腦版隱藏手機選單 */
+@media (min-width: 769px) {
+  .mobile-menu-btn,
+  .mobile-overlay,
+  .mobile-drawer {
+    display: none !important;
   }
 }

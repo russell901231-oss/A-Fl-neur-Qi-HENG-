@@ -3,11 +3,13 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Works from './components/Works'
 import Contact from './components/Contact'
+import MobileMenu from './components/MobileMenu'
 
 export default function Home() {
   return (
     <>
       <Header />
+      <MobileMenu />
       <div className="shell">
         <aside className="rail rail-left">
           <div className="rail-block">
